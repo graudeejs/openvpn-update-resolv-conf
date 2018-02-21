@@ -52,6 +52,8 @@ Licenced under GNU GPL.
 
 ### Credits
 
+2018 - [graudees](https://github.com/graudeejs) rewrote this script to work natively on FreeBSD
+
 2016 - WGH Added modified script to support systemd-networkd
 
 2014 - Alfredo Palhares <masterkorp@masterkorp.net>
