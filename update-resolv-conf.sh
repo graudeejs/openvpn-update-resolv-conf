@@ -64,11 +64,11 @@ build_config() {
         for DS in $IF_DNS_SEARCH; do
             R="${R} $DS"
         done
-        R=$(printf '%s\n' "${R}")
+        R=$(printf 'search %s\n' "${R}")
     fi
 
     for NS in $IF_DNS_NAMESERVERS; do
-        R=$(printf '%s\n' "${R}nameserver $NS")
+        R=$(printf '%s\nnameserver %s\n' "${R}" "$NS")
     done
     echo "$R"
 }
